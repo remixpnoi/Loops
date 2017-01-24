@@ -1,0 +1,55 @@
+
+<html>
+<head><title>Loops and Functions</title>
+<script type="text/javascript">
+function forLoop()
+{
+	document.write("you are in the for loop");
+	for (i=0;i<5;i++)
+	{
+		document.write("<br />here is my for loop: counter:" + i);
+	}
+}
+function doWhileLoop()
+{
+	document.write("you are in the do while loop");
+	var j=0;
+	do
+	{
+		document.write("<br />here is my <b>do while</b> loop, counter:" + j);
+		j=j+2;  //j+=2;
+	} while (j<5)
+}	
+function whileLoop()
+{
+	document.write("you are in the while loop");
+	
+	var k=0;
+	while (k<5)
+	{
+		document.write("<br/>here is my while loop, counter:" +k);
+		k+=3;
+	}	
+}
+</script></head>
+<body>
+<script type="text/javascript">
+
+var loopChoice = prompt("Pick 1-For loop, 2-do while loop, 3-while loop");
+
+if (loopChoice == 1)
+	forLoop();
+else if (loopChoice == 2)
+{
+	
+	doWhileLoop();}
+else if (loopChoice == 3)
+	whileLoop();
+else 
+	document.write("you didn't pick the correct options"); 
+
+</script>
+
+
+</body>
+</html>
